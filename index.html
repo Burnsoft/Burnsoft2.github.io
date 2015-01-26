@@ -4,15 +4,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Burnsoft 2.0</title>
-    <meta name="description" content="Thoughts, stories and ideas.">
+        <meta name="description" content="ex(ish)iOS developer and general geekiness">
 
     <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/screen.css?v=b209d1e03f">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="assets/build/all.min.css?v=70ad55fb88">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'YOUR_ID_HERE', 'auto');
+        ga('send', 'pageview', location.pathname + location.search);
+    </script>
 
     <link rel="canonical" href="http://localhost:2368/">
     <meta name="generator" content="Ghost 0.5">
@@ -20,72 +32,78 @@
 </head>
 <body class="home-template">
 
-    <div id="wrapper">
-        
-
-<header class="site-head">
-    <div class="site-head-content">
-        <div class="vertical">
-            <h1 class="blog-title">Burnsoft 2.0</h1>
-        </div>
+    <div class="content-wrapper">
+        <div class="large-8 small-12 columns large-centered">
+            
+<header class="main-header" role="banner">
+    <nav class="main-nav text-right" role="navigation">
+        <ul>
+        <!--Home link -- two conditions because hbs doesn't have ||-->
+    
+        <!--Add static pages here-->
+        <li><a href="http://localhost:2368/about">About</a></li>
+    
+        <!--RSS -->
+            <li><a href="http://localhost:2368/rss/"><i class="fa fa-rss"></i> Subscribe</a></li>
+        </ul>
+    </nav>
+    <div class="main-header-title text-center">
+        <a href="http://localhost:2368"><h1 class="page-title">Burnsoft 2.0</h1></a>
+        <p class="page-description">ex(ish)iOS developer and general geekiness</p>
     </div>
 </header>
 
-<main class="content" role="main">
+<main id="content" class="content" role="main">
 
-
-    <article class="mainpage post">
-        <div class="post-inner">
-            <header class="post-header">
-                <h2 class="post-title"><a href="testing-again/">Testing again</a></h2>
-                <div class="post-meta"><time datetime="2015-01-25">January 25, 2015</time></div>
-            </header>
-            <section class="content-temp">
-                <p></p>
-            </section>
-            <section class="post-excerpt">
-                <p>Nothing to see here, I said nothing to see here!…</p>
-            </section>
-        </div>
+    
+    <section class="post-loop small-12 large-10 large-centered columns">
+    
+    
+    <article class="post" role="article" itemscope itemtype="http://schema.org/Article">
+        <p>
+            <span class="post-title" itemprop="headline"><a href="testing-again/">Testing again</a></span>
+            <span class="post-date">
+                published
+                <time class="post-date" datetime="January-25th-2015" itemprop="datePublished">January 25th 2015</time>
+            </span>
+        </p>
     </article>
-
-
-    <article class="mainpage post tag-getting-started">
-        <div class="post-inner">
-            <header class="post-header">
-                <h2 class="post-title"><a href="welcome-to-ghost/">Welcome to Ghost</a></h2>
-                <div class="post-meta"><time datetime="2015-01-25">January 25, 2015</time></div>
-            </header>
-            <section class="content-temp">
-                <p></p>
-            </section>
-            <section class="post-excerpt">
-                <p>You're live! Nice. We've put together a little post to introduce you to the Ghost editor and get you started. You can manage your content by signing in to the admin area at &lt;your blog URL&gt;/ghost/. When you arrive, you can select this post from a list…</p>
-            </section>
-        </div>
+    
+    
+    <article class="post tag-getting-started" role="article" itemscope itemtype="http://schema.org/Article">
+        <p>
+            <span class="post-title" itemprop="headline"><a href="welcome-to-ghost/">Welcome to Ghost</a></span>
+            <span class="post-date">
+                published
+                <time class="post-date" datetime="January-25th-2015" itemprop="datePublished">January 25th 2015</time>
+            </span>
+        </p>
     </article>
-
-
-    <nav class="pagination" role="navigation">
-    <span class="page-number">Page 1 of 1</span>
-</nav>
-
-    <script type="text/javascript" src="assets/js/index.js?v=b209d1e03f"></script>
+    
+    
+    </section>
+    
+    <div class="pagination pagination-centered" role="navigation">
+        <nav class="pagination" role="navigation">
+        <span class="page-number">Page 1 of 1</span>
+    </nav>
+    </div>
 
 </main>
 
+        </div>
     </div>
 
-    <footer class="site-footer">
-        <a class="subscribe icon-feed" href="http://localhost:2368/rss/"><span class="tooltip">Subscribe!</span></a>
-        <div class="inner">
-             <section class="copyright">All content copyright <a href="http://localhost:2368/">Burnsoft 2.0</a> © 2015 • All rights reserved.</section>
-             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
-        </div>
+    <footer class="site-footer text-center">
+         <section class="copyright"><a href="http://localhost:2368">Burnsoft 2.0</a> © 2015</section>
+         <section class="poweredby">
+             Proudly published with <a href="https://ghost.org">Ghost</a>
+             using the <a href="https://github.com/mihneadb/no-nonsense">no-nonsense</a> theme.
+         </section>
     </footer>
 
-    <script src="public/jquery.js?v=b209d1e03f"></script>
+    <script src="public/jquery.js?v=70ad55fb88"></script>
 
-    <script type="text/javascript" src="assets/js/jquery.fitvids.js?v=b209d1e03f"></script>
+    <script type="text/javascript" src="assets/build/all.min.js?v=70ad55fb88"></script>
 
 </body>
